@@ -12,7 +12,7 @@ logging=false
 #check wether jq and aws cli is installed
 
 command -v jq >/dev/null 2>&1 || { echo >&2 "The script requires jq. You can download it from https://stedolan.github.io/jq/"; exit 1; }
-command -v aws >/dev/null 2>&1 || { echo >&2 "The script requires aws. You can download it from https://aws.amazon.com/cli/"; exit 1; }
+command -v aws >/dev/null 2>&1 || { echo >&2 "The script requires aws cli. You can download it from https://aws.amazon.com/cli/"; exit 1; }
 
 echo "Publishing new version for lambda function ${YELLOW}$lambdaFnName${NC} and linking to alias ${YELLOW}$linkToAlias${NC}"
 
